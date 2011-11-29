@@ -1,0 +1,104 @@
+0.4.1 for Linux and Mac (Tue Nov 29 2011):
+        Hylke: Just some small tweaks and fixes:
+
+        - Bundle git with the Mac application
+        - Warn about potential global gitignore files
+        - Remove SmartIrc4Net
+        - Build system fixes
+	- Code cleanups
+
+
+0.4.0 for Linux and Mac (Sun Nov 12 2011):
+        Hylke: It has been a while since the last release. Since so many 
+        things changed, and it being (softly) incompatible with 0.2, I decided 
+        to call it 0.4. Here are the most important improvements:
+
+        - Support OS X Lion
+        - Revamped "Add Hosted Project..." dialog
+        - First run tutorial
+        - Clicking notifications opens the event log
+        - Support for organisation/host plugins
+        - Adding empty folders now works
+        - More useful error reporting
+        - Progress bar on the initial sync, and a button to cancel
+        - Replace IRC by a custom protocol as the default notification system
+        - Many many fixes for crashes and bugs
+
+        Travis:
+        - Nautilus 3.x plugin
+        - Bugfixes
+
+
+0.2.5 for Linux and Mac (Mon Jul 25 2011):
+
+        Hylke: Reimplement notes to be less buggy and backend independent. Polish
+        about dialog and event log html. Fix a bug where large collections of files 
+        weren't being synced when adding them at the same time. The event log now
+        collapses huge change sets and squashes events together by day when they
+        are on the same day and in the same folder. Add a controller per UI component 
+        to make the Windows verion easier to implement.
+
+
+0.2.4 for Linux and Mac (Wed Jun 29, 2011):
+
+        Hylke: Fix crash when setting up with an empty Git repository.
+
+
+0.2.3 for Linux and Mac (Tue Jun 28, 2011):
+
+        Hylke: Add the ability to add notes in the event logs. Fix some quirks
+        in the webkit view on Linux. Redid gravatar fetching parts to be more
+        efficient. Remove headless feature. Fix some small bugs and crashes.
+        SparkleShare will now also try to use your existing SSH keypair. Required
+        Git version is now 1.7.1 or later.
+
+
+0.2.2 for Linux and Mac (Tue Jun 14, 2011):
+
+        Hylke: Fix crash on first run when ~/.ssh doesn't exist. Sync algorithm
+        tweaks. New global event log. Ubuntu integration with libappindicator. Poll
+        sometimes even when using the notification service.
+
+
+0.2.1 for Linux and Mac (Wed Jun 8, 2011):
+
+        Hylke: Fix bug where host names with a "-" in them weren't accepted. Fix
+        crash that happens when the user doesn't have their "Real Name" set in the 
+        OS and a race condition connecting to the announcements server.
+
+
+0.2 for Linux and Mac (Mon Jun 6, 2011):
+
+	Hylke: Removed the dependancy on GitSharp. File rename detection support
+	in the event logs. Fixed all crashes reported in RC1 and improved sync
+        algorithm. Redid collision detection and conflict resolving (use a copy
+	of each version). Improved about dialogs with version checking. Pluggable
+	backend (experimental Mercurial support). Added support for Growl to show
+	notifications on Mac.
+
+
+0.2-rc1 for Linux and Mac (Sun Mar 20, 2011):
+
+	Hylke: A lot of fixes and optimisations across the backend. Less memory 
+	usage, less crashes. Instant notifications of new changes instead of polling.
+	Refreshed event log HTML theme. Keeping logs in memory for faster reopening and
+	loads more goodness.
+
+
+0.2-beta2 for Mac (Sat Feb 12, 2011):
+
+	Hylke: Mac version! Massive restructure of the code to an MVC-like model
+	to make building different front-ends easier. Ported the event logs to
+	Webkit, so users can style it to their liking. It also reduces the amount
+	of UI-porting that needs to be done between toolkits.
+
+
+0.2-beta1 (Sun Sep 5, 2010):
+
+	Hylke: Aside from the usual bug fixes and behind the scenes work I mainly
+	added features that increase productivity in the event logs. Not only does
+	it look a lot prettier, each entry in an event log now has a clickable link
+	for easy access to files. It refreshes automatically on new events as well.
+	The Nautilus plugin now	has the "Copy Web Link" context	menu item, which
+	makes sharing links a whole lot easier.
+
